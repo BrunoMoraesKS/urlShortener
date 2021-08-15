@@ -12,11 +12,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: hidden;
 }
 
 .linkShortenerSection {
   background: #3b3054;
   width: 90vw;
+  margin: 60px 0;
   border-radius: 10px;
 }
 
@@ -38,8 +40,9 @@
 }
 
 .linkShortenerForm input {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   padding-left: 15px;
+  font-size: 0.9rem;
 }
 
 .linkShortenerForm button {
@@ -66,6 +69,171 @@
   left: -70px;
   color: #f46262;
   font-size: 0.8rem;
+}
+
+.illustrationWorking {
+  position: relative;
+  top: 20px;
+  left: 90px;
+  width: 135%;
+  margin-bottom: 70px;
+}
+
+.presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.presentation h2 {
+  color: #35323e;
+  font-size: 2.3rem;
+  line-height: 40px;
+  text-align: center;
+}
+
+.presentation p {
+  margin: 15px 50px;
+  text-align: center;
+  color: #9e9aa7;
+}
+
+.getStarted {
+  margin: 15px 0;
+  width: 45%;
+  height: 50px;
+  background: #2acfcf;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-family: 800;
+  border-radius: 50px;
+}
+
+.statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  bottom: 130px;
+  padding-top: 150px;
+  background: rgba(191, 191, 191, 0.3);
+  z-index: -1;
+}
+
+.statistics h3 {
+  font-size: 1.7rem;
+  color: #35323e;
+  text-align: center;
+}
+
+.statistics p {
+  margin: 15px 50px;
+  text-align: center;
+  color: #9e9aa7;
+}
+
+.statisticsCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 25px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+.statisticsCards div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 22px 0;
+  background: white;
+}
+
+.statisticsCards div h4 {
+  font-size: 1.4rem;
+  margin-top: -70px;
+}
+
+.statisticsCards div p {
+  margin: 0 20px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.statisticsCards .verticalLine {
+  position: relative;
+  bottom: 21px;
+  width: 5px;
+  height: 40px;
+  margin: 0;
+  background: #2acfcf;
+}
+
+.statisticsCards .iconCircle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  bottom: 65px;
+  padding: 15px;
+  background: #3b3054;
+  border-radius: 100%;
+}
+
+.statisticsCards .iconCircle img {
+  width: 28px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px;
+}
+
+header button {
+  font-size: 1.8rem;
 }
 
 * {
