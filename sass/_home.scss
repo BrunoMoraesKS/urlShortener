@@ -3,11 +3,15 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  overflow: hidden;
 }
 
 .linkShortenerSection {
   background: $darkViolet;
   width: 90vw;
+
+  margin: 60px 0;
 
   border-radius: 10px;
 }
@@ -21,8 +25,9 @@
   padding: 20px 30px;
 
   input {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     padding-left: 15px;
+    font-size: 0.9rem;
   }
 
   button {
@@ -53,4 +58,71 @@
     color: $red;
     font-size: 0.8rem;
   }
+}
+
+.illustrationWorking {
+  position: relative;
+
+  top: 20px;
+  left: 90px;
+  width: 135%;
+
+  margin-bottom: 70px;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    color: $veryDarkBlue;
+    font-size: 2.3rem;
+    line-height: 40px;
+    text-align: center;
+  }
+
+  p {
+    margin: 15px 50px;
+
+    text-align: center;
+    color: $grayishViolet;
+  }
+}
+
+.getStarted {
+  margin: 15px 0;
+
+  width: 45%;
+  height: 50px;
+
+  background: $cyan;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-family: 800;
+
+  border-radius: 50px;
+}
+
+.statistics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3 {
+    font-size: 1.7rem;
+    color: $veryDarkBlue;
+    text-align: center;
+  }
+
+  p {
+    margin: 15px 50px;
+
+    text-align: center;
+    color: $grayishViolet;
+  }
+}
+
+.statisticsCards {
 }
