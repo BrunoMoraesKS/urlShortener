@@ -106,7 +106,7 @@ const Home = () => {
         </p>
 
         <section className="statisticsCards">
-          <div>
+          <div className="card">
             <div className="iconCircle">
               <img src={brandRecognition} alt="Brand Recognition" />
             </div>
@@ -122,7 +122,7 @@ const Home = () => {
 
           <div className="verticalLine"></div>
 
-          <div>
+          <div className="card">
             <div className="iconCircle">
               <img src={detailedRecords} alt="Detailed Records" />
             </div>
@@ -138,7 +138,7 @@ const Home = () => {
 
           <div className="verticalLine"></div>
 
-          <div>
+          <div className="card">
             <div className="iconCircle">
               <img src={fullyCustomizable} alt="Fully Customizable" />
             </div>
@@ -151,6 +151,12 @@ const Home = () => {
             </p>
           </div>
         </section>
+      </section>
+
+      <section className="boostYourLink">
+        <h3>Boost your links today</h3>
+
+        <button className="getStarted">Get Started</button>
       </section>
     </div>
   );

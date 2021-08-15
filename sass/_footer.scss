@@ -1,0 +1,50 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 50px 0;
+
+  background: $veryDarkViolet;
+
+  color: white;
+
+  .logo {
+    filter: brightness(10);
+
+    margin-bottom: 40px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  li {
+    list-style: none;
+
+    margin-bottom: 8px;
+
+    font-size: 0.9rem;
+    font-weight: 200;
+  }
+
+  .liTitle {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+
+    font-size: 1.2rem;
+  }
+
+  .socialIcons {
+    margin-top: 40px;
+    img {
+      margin: 0 12px;
+    }
+  }
+}

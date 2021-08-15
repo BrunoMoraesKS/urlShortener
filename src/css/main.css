@@ -16,9 +16,12 @@
 }
 
 .linkShortenerSection {
-  background: #3b3054;
   width: 90vw;
   margin: 60px 0;
+  background: url("../images/bg-shorten-mobile.svg"), #3b3054;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 70px -75px;
   border-radius: 10px;
 }
 
@@ -131,6 +134,7 @@
   position: relative;
   bottom: 130px;
   padding-top: 150px;
+  padding-bottom: 70px;
   background: rgba(191, 191, 191, 0.3);
   z-index: -1;
 }
@@ -142,7 +146,8 @@
 }
 
 .statistics p {
-  margin: 15px 50px;
+  margin: 60px 50px;
+  margin-top: 15px;
   text-align: center;
   color: #9e9aa7;
 }
@@ -163,7 +168,7 @@
   border-radius: 10px;
 }
 
-.statisticsCards div {
+.statisticsCards .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,16 +179,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 22px 0;
+  margin-top: -10px;
   background: white;
+  border-radius: 8px;
 }
 
-.statisticsCards div h4 {
+.statisticsCards .card h4 {
   font-size: 1.4rem;
-  margin-top: -70px;
 }
 
-.statisticsCards div p {
+.statisticsCards .card p {
   margin: 0 20px;
   margin-bottom: 30px;
   margin-top: 20px;
@@ -194,7 +199,8 @@
   bottom: 21px;
   width: 5px;
   height: 40px;
-  margin: 0;
+  margin-top: 21px;
+  margin-bottom: 18px;
   background: #2acfcf;
 }
 
@@ -209,7 +215,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   position: relative;
-  bottom: 65px;
+  bottom: 30px;
   padding: 15px;
   background: #3b3054;
   border-radius: 100%;
@@ -217,6 +223,33 @@
 
 .statisticsCards .iconCircle img {
   width: 28px;
+}
+
+.boostYourLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 300px;
+  margin-top: -130px;
+  background: url("../images/bg-boost-mobile.svg"), #3b3054;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.boostYourLink h3 {
+  font-size: 1.7rem;
+  color: white;
 }
 
 header {
@@ -234,6 +267,69 @@ header {
 
 header button {
   font-size: 1.8rem;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 0;
+  background: #232127;
+  color: white;
+}
+
+footer .logo {
+  -webkit-filter: brightness(10);
+          filter: brightness(10);
+  margin-bottom: 40px;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer li {
+  list-style: none;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+
+footer .liTitle {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+footer .socialIcons {
+  margin-top: 40px;
+}
+
+footer .socialIcons img {
+  margin: 0 12px;
 }
 
 * {
