@@ -8,7 +8,60 @@ header {
   img {
   }
 
-  button {
-    font-size: 1.8rem;
+  nav {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 90%;
+    height: 400px;
+    top: 75px;
+    left: 5%;
+
+    background: $darkViolet;
+    border-radius: 10px;
+
+    z-index: 1000;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+
+      width: 100%;
+      height: 100%;
+    }
+
+    li {
+      list-style: none;
+
+      font-size: 1.2rem;
+      color: white;
+      font-weight: 700;
+    }
+
+    .getStarted {
+      width: 80%;
+    }
   }
+}
+
+.horizontalLine {
+  height: 1px;
+  width: 80%;
+
+  margin: 8px 0;
+
+  background: $gray;
+}
+
+.menuIcon {
+  font-size: 1.8rem;
+}
+
+.showMenu {
+  display: flex;
 }

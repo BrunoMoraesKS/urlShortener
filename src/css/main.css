@@ -265,8 +265,72 @@ header {
   margin: 20px;
 }
 
-header button {
+header nav {
+  position: absolute;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  height: 400px;
+  top: 75px;
+  left: 5%;
+  background: #3b3054;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+}
+
+header nav li {
+  list-style: none;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 700;
+}
+
+header nav .getStarted {
+  width: 80%;
+}
+
+.horizontalLine {
+  height: 1px;
+  width: 80%;
+  margin: 8px 0;
+  background: rgba(191, 191, 191, 0.3);
+}
+
+.menuIcon {
   font-size: 1.8rem;
+}
+
+.showMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 footer {
