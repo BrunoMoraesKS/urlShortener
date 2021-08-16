@@ -5,3 +5,15 @@ $gray: hsla(0, 0%, 75%, 0.3);
 $grayishViolet: hsl(257, 7%, 63%);
 $veryDarkBlue: hsl(255, 11%, 22%);
 $veryDarkViolet: hsl(260, 8%, 14%);
+
+@mixin mediaMD {
+  @media screen and(min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLG {
+  @media screen and(min-width: 1440px) {
+    @content;
+  }
+}

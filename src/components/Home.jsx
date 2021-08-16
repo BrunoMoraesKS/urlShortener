@@ -61,23 +61,25 @@ const Home = () => {
 
   return (
     <div className="home">
-      <img
-        className="illustrationWorking"
-        src={illustrationWorking}
-        alt="Working illustration"
-      />
+      <section className="illustrationAndPresentation">
+        <img
+          className="illustrationWorking"
+          src={illustrationWorking}
+          alt="Working illustration"
+        />
 
-      <section className="presentation">
-        <h2>More than just shorter links</h2>
+        <section className="presentation">
+          <h2>More than just shorter links</h2>
 
-        <p>
-          Build your brand’s recognition and get detailed insights on how your
-          links are performing.
-        </p>
+          <p>
+            Build your brand’s recognition and get detailed insights on how your
+            links are performing.
+          </p>
 
-        <button className="getStarted">
-          <h3>Get Started</h3>
-        </button>
+          <button className="getStarted">
+            <h3>Get Started</h3>
+          </button>
+        </section>
       </section>
 
       <main>
