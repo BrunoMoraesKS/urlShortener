@@ -59,6 +59,14 @@ const Home = () => {
       });
   };
 
+  const longLinkSize = (link) => {
+    if (link.length >= 25) {
+      return <h4>{link.slice(0, 25)}...</h4>;
+    } else {
+      return <h4>{link}</h4>;
+    }
+  };
+
   return (
     <div className="home">
       <section className="illustrationAndPresentation">
@@ -103,7 +111,7 @@ const Home = () => {
           {shortLinksArray.map((item, index) => {
             return (
               <div key={index} className="shortLinksMap">
-                <h4>{item.longLink}</h4>
+                {longLinkSize(item.longLink)}
                 <div className="horizontalLine"></div>
                 <h3>{item.shortLink}</h3>
                 <button
