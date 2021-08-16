@@ -8,9 +8,11 @@
 }
 
 .linkShortenerSection {
+  position: relative;
+
   width: 90vw;
 
-  margin: 60px 0;
+  margin-top: 60px;
 
   background: url("../images/bg-shorten-mobile.svg"), $darkViolet;
   background-repeat: no-repeat;
@@ -18,6 +20,8 @@
   background-position: 70px -75px;
 
   border-radius: 10px;
+
+  z-index: 999;
 }
 
 .linkShortenerForm {
@@ -56,7 +60,7 @@
 
   span {
     position: relative;
-    top: -25px;
+    top: -10px;
     left: -70px;
 
     color: $red;
@@ -114,16 +118,11 @@
   flex-direction: column;
   align-items: center;
 
-  position: relative;
-
-  bottom: 130px;
-
   padding-top: 150px;
   padding-bottom: 70px;
+  margin-top: -65px;
 
   background: $gray;
-
-  z-index: -1;
 
   h3 {
     font-size: 1.7rem;
@@ -213,7 +212,6 @@
 
   width: 100%;
   height: 300px;
-  margin-top: -130px;
 
   background: url("../images/bg-boost-mobile.svg"), $darkViolet;
   background-repeat: no-repeat;
@@ -223,5 +221,76 @@
     font-size: 1.7rem;
 
     color: white;
+  }
+}
+
+.shortenedLinks {
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  bottom: 70px;
+
+  margin: 0 -20px;
+  padding: 0 20px;
+
+  margin-bottom: -5px;
+  padding-top: 100px;
+
+  background: $gray;
+}
+
+.shortLinksMap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+
+  position: relative;
+
+  height: 170px;
+  padding: 15px;
+
+  margin: 15px 0;
+
+  background: white;
+  border-radius: 5px;
+
+  h4 {
+    color: $veryDarkBlue;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .horizontalLine {
+    width: 107.5%;
+    height: 2px;
+    margin-left: -15px;
+  }
+
+  h3 {
+    color: $cyan;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  button {
+    align-self: center;
+
+    width: 90%;
+    height: 35px;
+
+    margin-top: 5px;
+
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+
+    background: $cyan;
+    border-radius: 5px;
+  }
+
+  .copied {
+    background: $darkViolet;
   }
 }

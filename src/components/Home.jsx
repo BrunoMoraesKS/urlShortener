@@ -48,7 +48,8 @@ const Home = () => {
       .then(function (response) {
         setShortLinksArray([
           ...shortLinksArray,
-          response.data.result.short_link2,
+
+          { shortLink: response.data.result.short_link2, longLink: longLink },
         ]);
       })
       .catch((err) => {
@@ -94,6 +95,45 @@ const Home = () => {
 
             {loading ? loadingApi() : shortenBtn()}
           </form>
+        </section>
+
+        <section className="shortenedLinks">
+          {shortLinksArray.map((item, index) => {
+            return (
+              <div key={index} className="shortLinksMap">
+                <h4>{item.longLink}</h4>
+                <div className="horizontalLine"></div>
+                <h3>{item.shortLink}</h3>
+                <button
+                  id={`copyButton${index}`}
+                  className="copyButton"
+                  onClick={() => {
+                    const buttonClass =
+                      document.getElementsByClassName("copyButton");
+
+                    let i = 0;
+
+                    do {
+                      buttonClass[i].classList.remove("copied");
+                      buttonClass[i].innerHTML = "Copy";
+
+                      i++;
+                    } while (i !== buttonClass.length);
+
+                    navigator.clipboard.writeText(item.shortLink);
+
+                    const buttonId = document.getElementById(
+                      `copyButton${index}`
+                    );
+                    buttonId.classList.add("copied");
+                    buttonId.innerHTML = "Copied!";
+                  }}
+                >
+                  Copy
+                </button>
+              </div>
+            );
+          })}
         </section>
       </main>
 
