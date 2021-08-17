@@ -8,14 +8,10 @@ header {
   nav {
     position: absolute;
     display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
     width: 90%;
     height: 400px;
     top: 75px;
-    left: 5%;
 
     background: $darkViolet;
     border-radius: 10px;

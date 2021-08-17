@@ -8,7 +8,6 @@ import fullyCustomizable from "../images/icon-fully-customizable.svg";
 
 const Home = () => {
   const [longLink, setLongLink] = useState("");
-  const [shortLink, setShortLink] = useState("");
   const [shortLinksArray, setShortLinksArray] = useState([]);
 
   const [inputError, setInputError] = useState("");
@@ -156,7 +155,7 @@ const Home = () => {
         </p>
 
         <section className="statisticsCards">
-          <div className="card">
+          <div className="card card1">
             <div className="iconCircle">
               <img src={brandRecognition} alt="Brand Recognition" />
             </div>
@@ -172,7 +171,7 @@ const Home = () => {
 
           <div className="verticalLine"></div>
 
-          <div className="card">
+          <div className="card card2">
             <div className="iconCircle">
               <img src={detailedRecords} alt="Detailed Records" />
             </div>
@@ -188,7 +187,7 @@ const Home = () => {
 
           <div className="verticalLine"></div>
 
-          <div className="card">
+          <div className="card card3">
             <div className="iconCircle">
               <img src={fullyCustomizable} alt="Fully Customizable" />
             </div>

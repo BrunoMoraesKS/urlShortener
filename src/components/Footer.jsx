@@ -8,34 +8,42 @@ import instagramIcon from "../images/icon-instagram.svg";
 
 const Footer = () => {
   return (
-    <footer>
-      <img src={logo} alt="Logo" className="logo" />
+    <div className="footerDiv">
+      <footer>
+        <img src={logo} alt="Logo" className="logo" />
 
-      <ul>
-        <li className="liTitle">Features</li>
-        <li>Link Shortening</li>
-        <li>Branded Links</li>
-        <li>Analytics</li>
+        <ul>
+          <section className="features">
+            <li className="liTitle">Features</li>
+            <li>Link Shortening</li>
+            <li>Branded Links</li>
+            <li>Analytics</li>
+          </section>
 
-        <li className="liTitle">Resources</li>
-        <li>Blog</li>
-        <li>Developers</li>
-        <li>Support</li>
+          <section className="resources">
+            <li className="liTitle">Resources</li>
+            <li>Blog</li>
+            <li>Developers</li>
+            <li>Support</li>
+          </section>
 
-        <li className="liTitle">Company</li>
-        <li>About</li>
-        <li>Our Team</li>
-        <li>Carrers</li>
-        <li>Contact</li>
-      </ul>
+          <section className="company">
+            <li className="liTitle">Company</li>
+            <li>About</li>
+            <li>Our Team</li>
+            <li>Carrers</li>
+            <li>Contact</li>
+          </section>
+        </ul>
 
-      <section className="socialIcons">
-        <img src={facebookIcon} alt="Facebook Icon" />
-        <img src={twitterIcon} alt="Twitter Icon" />
-        <img src={pinterestIcon} alt="Pinterest Icon" />
-        <img src={instagramIcon} alt="Instagram Icon" />
-      </section>
-    </footer>
+        <section className="socialIcons">
+          <img src={facebookIcon} alt="Facebook Icon" />
+          <img src={twitterIcon} alt="Twitter Icon" />
+          <img src={pinterestIcon} alt="Pinterest Icon" />
+          <img src={instagramIcon} alt="Instagram Icon" />
+        </section>
+      </footer>
+    </div>
   );
 };
 

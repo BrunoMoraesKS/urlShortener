@@ -13,7 +13,7 @@ $veryDarkViolet: hsl(260, 8%, 14%);
 }
 
 @mixin mediaLG {
-  @media screen and(min-width: 1440px) {
+  @media screen and(min-width: 1280px) {
     @content;
   }
 }
